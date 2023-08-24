@@ -38,9 +38,49 @@
   </header>
 
   <!-- SECTION -->
-  <main id="router-view">
+  <main class="container-fluid" id="router-view">
     <!-- PRIMARY VIEWPORT -->
+
+
   </main>
+  <!-- 
+  <section class="row">
+    <div class="col-12">
+      <h1>Jumble Name</h1>
+      <p>Jumble Body</p>
+    </div>
+
+  </section> -->
+
+  <!-- <section class="row">
+    <div class="col-12">
+      <h1>${this.name}</h1>
+      <p>${this.body}</p>
+    </div>
+    <div>
+
+    </div>
+    <form action="" class="col-12" onsubmit="app.JumblesController.compareBody()">
+      <textarea name="jumbleBody" id="jumbleBody" cols="30" rows="10"></textarea>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-info col-2" type="submit">Submit</button>
+      </div>
+    </form>
+  </section> -->
+
+  <form onsubmit="app.JumblesController.createJumble()">
+    <div class="form-group">
+      <label for="formGroupExampleInput">Name</label>
+      <input name="name" type="text" class="form-control" id="" placeholder="Jumble Name">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Body</label>
+      <input name="body" type="text" class="form-control" id="formGroupExampleInput2"
+        placeholder="Enter you Jumble here">
+    </div>
+    <button class="btn btn-success" type="submit">Create Jumble</button>
+  </form>
+
 
   <!-- SECTION -->
   <footer class="bg-dark text-light">

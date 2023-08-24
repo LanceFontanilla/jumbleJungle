@@ -1,5 +1,6 @@
 import { AboutController } from "./controllers/AboutController.js";
 import { HomeController } from "./controllers/HomeController.js";
+import { JumblesController } from "./controllers/JumblesController.js";
 import { ValuesController } from "./controllers/ValuesController.js";
 import { AboutView } from "./views/AboutView.js";
 
@@ -7,14 +8,11 @@ import { AboutView } from "./views/AboutView.js";
 export const router = [
   {
     path: '',
-    controller: HomeController,
+    controller: JumblesController,
     view: /*html*/`
-    <div class="card">
-      <div class="card-body">
-        <p>Home Page</p>
-        <button class="btn btn-dark" onclick="app.HomeController.testButton()">😎</button>
-      </div>
-    </div>
+<div id="jumbles-list"> This is the HTML </div>
+
+<div id="jumbles-active"> this is the active jumble </div>
     `
   },
   {
@@ -23,3 +21,4 @@ export const router = [
     view: AboutView
   }
 ]
+
